@@ -40,9 +40,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-9f-i3j">
-                                            <rect key="frame" x="72" y="51" width="36" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-9f-i3j">
+                                            <rect key="frame" x="72" y="49" width="36" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -51,9 +50,13 @@
                                     <constraints>
                                         <constraint firstItem="HJe-aF-XjF" firstAttribute="leading" secondItem="yRX-lm-HrX" secondAttribute="trailing" constant="8" symbolic="YES" id="5gj-ax-PHZ"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HJe-aF-XjF" secondAttribute="trailing" constant="20" symbolic="YES" id="7Pc-AG-3Li"/>
+                                        <constraint firstItem="gDG-9f-i3j" firstAttribute="top" secondItem="HJe-aF-XjF" secondAttribute="bottom" constant="8" symbolic="YES" id="9im-Pu-70q"/>
+                                        <constraint firstItem="gDG-9f-i3j" firstAttribute="leading" secondItem="HJe-aF-XjF" secondAttribute="leading" id="EWV-Mg-D57"/>
                                         <constraint firstItem="HJe-aF-XjF" firstAttribute="top" secondItem="OVv-yE-hGZ" secondAttribute="top" constant="20" symbolic="YES" id="V7J-fz-olh"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gDG-9f-i3j" secondAttribute="bottom" constant="20" symbolic="YES" id="WYa-sc-SNx"/>
                                         <constraint firstItem="yRX-lm-HrX" firstAttribute="centerY" secondItem="OVv-yE-hGZ" secondAttribute="centerY" id="dAS-jE-f5w"/>
                                         <constraint firstItem="yRX-lm-HrX" firstAttribute="leading" secondItem="OVv-yE-hGZ" secondAttribute="leading" constant="20" symbolic="YES" id="t5B-xU-1Qj"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gDG-9f-i3j" secondAttribute="trailing" constant="20" symbolic="YES" id="z4O-bQ-JS6"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
