@@ -23,9 +23,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRX-lm-HrX">
-                                            <rect key="frame" x="20" y="28" width="44" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRX-lm-HrX">
+                                            <rect key="frame" x="20" y="27.5" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="EE2-KF-dSF"/>
+                                                <constraint firstAttribute="width" secondItem="yRX-lm-HrX" secondAttribute="height" multiplier="1:1" id="uHv-YX-f2G"/>
+                                            </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain">
                                                 <backgroundConfiguration key="background" image="circle" catalog="system"/>
@@ -46,6 +49,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yRX-lm-HrX" firstAttribute="centerY" secondItem="OVv-yE-hGZ" secondAttribute="centerY" id="dAS-jE-f5w"/>
+                                        <constraint firstItem="yRX-lm-HrX" firstAttribute="leading" secondItem="OVv-yE-hGZ" secondAttribute="leading" constant="20" symbolic="YES" id="t5B-xU-1Qj"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
