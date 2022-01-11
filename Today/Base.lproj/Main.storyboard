@@ -34,9 +34,8 @@
                                                 <backgroundConfiguration key="background" image="circle" catalog="system"/>
                                             </buttonConfiguration>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-aF-XjF">
-                                            <rect key="frame" x="72" y="28" width="33" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-aF-XjF">
+                                            <rect key="frame" x="72" y="20" width="33" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -50,6 +49,9 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="HJe-aF-XjF" firstAttribute="leading" secondItem="yRX-lm-HrX" secondAttribute="trailing" constant="8" symbolic="YES" id="5gj-ax-PHZ"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HJe-aF-XjF" secondAttribute="trailing" constant="20" symbolic="YES" id="7Pc-AG-3Li"/>
+                                        <constraint firstItem="HJe-aF-XjF" firstAttribute="top" secondItem="OVv-yE-hGZ" secondAttribute="top" constant="20" symbolic="YES" id="V7J-fz-olh"/>
                                         <constraint firstItem="yRX-lm-HrX" firstAttribute="centerY" secondItem="OVv-yE-hGZ" secondAttribute="centerY" id="dAS-jE-f5w"/>
                                         <constraint firstItem="yRX-lm-HrX" firstAttribute="leading" secondItem="OVv-yE-hGZ" secondAttribute="leading" constant="20" symbolic="YES" id="t5B-xU-1Qj"/>
                                     </constraints>
