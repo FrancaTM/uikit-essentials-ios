@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25691436278F80B5001B1B67 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25691435278F80B5001B1B67 /* ReminderListCell.swift */; };
 		256A189F278B9526008B6BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A189E278B9526008B6BE7 /* AppDelegate.swift */; };
 		256A18A1278B9526008B6BE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A18A0278B9526008B6BE7 /* SceneDelegate.swift */; };
 		256A18A3278B9526008B6BE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A18A2278B9526008B6BE7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25691435278F80B5001B1B67 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		256A189B278B9526008B6BE7 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256A189E278B9526008B6BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256A18A0278B9526008B6BE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				256A18A9278B952C008B6BE7 /* LaunchScreen.storyboard */,
 				256A18AC278B952C008B6BE7 /* Info.plist */,
 				256A18B2278B9C77008B6BE7 /* Reminder.swift */,
+				25691435278F80B5001B1B67 /* ReminderListCell.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				256A18A3278B9526008B6BE7 /* ViewController.swift in Sources */,
+				25691436278F80B5001B1B67 /* ReminderListCell.swift in Sources */,
 				256A189F278B9526008B6BE7 /* AppDelegate.swift in Sources */,
 				256A18A1278B9526008B6BE7 /* SceneDelegate.swift in Sources */,
 				256A18B3278B9C78008B6BE7 /* Reminder.swift in Sources */,
