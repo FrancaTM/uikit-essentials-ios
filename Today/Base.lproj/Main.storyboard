@@ -33,6 +33,9 @@
                                             <buttonConfiguration key="configuration" style="plain">
                                                 <backgroundConfiguration key="background" image="circle" catalog="system"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="doneButtonTriggered:" destination="RB4-VX-Ook" eventType="touchUpInside" id="vcq-K7-Mhd"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-aF-XjF">
                                             <rect key="frame" x="72" y="20" width="33" height="21"/>
@@ -61,7 +64,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dateLabel" destination="gDG-9f-i3j" id="VKm-pf-NwY"/>
-                                    <outlet property="doneButton" destination="yRX-lm-HrX" id="NZq-ks-77A"/>
+                                    <outlet property="doneButton" destination="yRX-lm-HrX" id="flw-dd-3d5"/>
                                     <outlet property="titleLabel" destination="HJe-aF-XjF" id="haf-85-Zzv"/>
                                 </connections>
                             </tableViewCell>
