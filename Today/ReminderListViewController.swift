@@ -26,7 +26,11 @@ extension ReminderListViewController {
         let image = reminder.isComplete ? UIImage(systemName: "circle.fill") : UIImage(systemName: "circle")
         cell.titleLabel.text = reminder.title
         cell.dateLabel.text = reminder.dueDate.description
-        cell.doneButton.setBackgroundImage(image, for: .normal)
+        
+        // TODO: adjust button image size
+        // cell.doneButton.setBackgroundImage(image, for: .normal)
+        cell.doneButton.setImage(image, for: .normal)
+        
         cell.doneButtonAction = {
             Reminder.testData[indexPath.row].isComplete.toggle()
             tableView.reloadRows(at: [indexPath], with: .none)
