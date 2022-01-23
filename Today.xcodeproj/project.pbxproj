@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25536C59279C267E0093B50F /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C58279C267E0093B50F /* ReminderDetailViewController.swift */; };
+		25536C5B279D8FCA0093B50F /* ReminderListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C5A279D8FCA0093B50F /* ReminderListDataSource.swift */; };
 		25691436278F80B5001B1B67 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25691435278F80B5001B1B67 /* ReminderListCell.swift */; };
 		256A189F278B9526008B6BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A189E278B9526008B6BE7 /* AppDelegate.swift */; };
 		256A18A1278B9526008B6BE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A18A0278B9526008B6BE7 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		25536C58279C267E0093B50F /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
+		25536C5A279D8FCA0093B50F /* ReminderListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListDataSource.swift; sourceTree = "<group>"; };
 		25691435278F80B5001B1B67 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		256A189B278B9526008B6BE7 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256A189E278B9526008B6BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				256A18B2278B9C77008B6BE7 /* Reminder.swift */,
 				25691435278F80B5001B1B67 /* ReminderListCell.swift */,
 				25536C58279C267E0093B50F /* ReminderDetailViewController.swift */,
+				25536C5A279D8FCA0093B50F /* ReminderListDataSource.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				25536C59279C267E0093B50F /* ReminderDetailViewController.swift in Sources */,
 				256A18A1278B9526008B6BE7 /* SceneDelegate.swift in Sources */,
 				256A18B3278B9C78008B6BE7 /* Reminder.swift in Sources */,
+				25536C5B279D8FCA0093B50F /* ReminderListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
