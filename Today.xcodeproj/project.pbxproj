@@ -13,6 +13,7 @@
 		25536C60279EAFAC0093B50F /* EditTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C5F279EAFAC0093B50F /* EditTitleCell.swift */; };
 		25536C62279EB0780093B50F /* EditDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C61279EB0780093B50F /* EditDateCell.swift */; };
 		25536C64279EB0E70093B50F /* EditNotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C63279EB0E70093B50F /* EditNotesCell.swift */; };
+		25536C66279ECEA70093B50F /* ReminderDetailEditDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25536C65279ECEA70093B50F /* ReminderDetailEditDataSource.swift */; };
 		25691436278F80B5001B1B67 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25691435278F80B5001B1B67 /* ReminderListCell.swift */; };
 		256A189F278B9526008B6BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A189E278B9526008B6BE7 /* AppDelegate.swift */; };
 		256A18A1278B9526008B6BE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A18A0278B9526008B6BE7 /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		25536C5F279EAFAC0093B50F /* EditTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTitleCell.swift; sourceTree = "<group>"; };
 		25536C61279EB0780093B50F /* EditDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDateCell.swift; sourceTree = "<group>"; };
 		25536C63279EB0E70093B50F /* EditNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesCell.swift; sourceTree = "<group>"; };
+		25536C65279ECEA70093B50F /* ReminderDetailEditDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailEditDataSource.swift; sourceTree = "<group>"; };
 		25691435278F80B5001B1B67 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		256A189B278B9526008B6BE7 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256A189E278B9526008B6BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				25536C58279C267E0093B50F /* ReminderDetailViewController.swift */,
 				25536C5A279D8FCA0093B50F /* ReminderListDataSource.swift */,
 				25536C5C279DD4F30093B50F /* ReminderDetailViewDataSource.swift */,
+				25536C65279ECEA70093B50F /* ReminderDetailEditDataSource.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				25536C62279EB0780093B50F /* EditDateCell.swift in Sources */,
 				256A18B3278B9C78008B6BE7 /* Reminder.swift in Sources */,
 				25536C5B279D8FCA0093B50F /* ReminderListDataSource.swift in Sources */,
+				25536C66279ECEA70093B50F /* ReminderDetailEditDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
