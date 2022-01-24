@@ -126,7 +126,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="hdG-kL-DYw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditTitleCell" id="hdG-kL-DYw" customClass="EditTitleCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="414" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hdG-kL-DYw" id="D0n-Pw-75O">
@@ -146,8 +146,11 @@
                                         <constraint firstItem="7i8-zK-Roz" firstAttribute="top" secondItem="D0n-Pw-75O" secondAttribute="top" id="pWR-7n-mLn"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleTextField" destination="7i8-zK-Roz" id="AsB-lD-ERA"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditDateCell" rowHeight="216" id="qRU-Uj-04G">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditDateCell" rowHeight="216" id="qRU-Uj-04G" customClass="EditDateCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="122.5" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qRU-Uj-04G" id="7oB-Xd-37S">
@@ -165,8 +168,11 @@
                                         <constraint firstItem="xMB-mU-sia" firstAttribute="top" secondItem="7oB-Xd-37S" secondAttribute="top" id="sy1-BS-scI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datePicker" destination="xMB-mU-sia" id="NE9-D1-6bG"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="geo-io-hPM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNotesCell" rowHeight="216" id="geo-io-hPM" customClass="EditNotesCell" customModule="Today" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="338.5" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="geo-io-hPM" id="NwJ-3B-nvE">
@@ -192,6 +198,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="3mR-5R-JVx" secondAttribute="bottom" id="ztT-eS-X8n"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="notesTextView" destination="3mR-5R-JVx" id="7bL-mB-L9l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
