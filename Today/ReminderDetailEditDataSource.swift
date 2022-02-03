@@ -8,6 +8,8 @@
 import UIKit
 
 class ReminderDetailEditDataSource: NSObject {
+    typealias ReminderChangeAction = (Reminder) -> Void
+    
     enum ReminderSection: Int, CaseIterable {
         case title
         case dueDate
@@ -48,6 +50,7 @@ class ReminderDetailEditDataSource: NSObject {
     }
     
     var reminder: Reminder
+    private var reminderChangeAction: ReminderChangeAction?
     
     private lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -56,8 +59,9 @@ class ReminderDetailEditDataSource: NSObject {
         return formatter
     }()
     
-    init(reminder: Reminder) {
+    init(reminder: Reminder, changeAction: @escaping ReminderChangeAction) {
         self.reminder = reminder
+        self.reminderChangeAction = changeAction
     }
     
     private func dequeueAndConfigureCell(for indexPath: IndexPath, from tableView: UITableView) -> UITableViewCell {
@@ -73,6 +77,7 @@ class ReminderDetailEditDataSource: NSObject {
             if let titleCell = cell as? EditTitleCell {
                 titleCell.configure(title: reminder.title) { title in
                     self.reminder.title = title
+                    self.reminderChangeAction?(self.reminder)
                 }
             }
         case .dueDate:
