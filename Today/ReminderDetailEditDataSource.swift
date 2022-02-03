@@ -71,7 +71,9 @@ class ReminderDetailEditDataSource: NSObject {
         switch section {
         case .title:
             if let titleCell = cell as? EditTitleCell {
-                titleCell.configure(title: reminder.title)
+                titleCell.configure(title: reminder.title) { title in
+                    self.reminder.title = title
+                }
             }
         case .dueDate:
             if indexPath.row == 0 {
