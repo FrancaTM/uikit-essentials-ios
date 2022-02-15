@@ -76,7 +76,15 @@
                             <outlet property="delegate" destination="BX5-b7-C0E" id="mJp-wY-t4B"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="DwU-UU-KrY">
+                            <connections>
+                                <action selector="addButtonTriggered:" destination="BX5-b7-C0E" id="8T4-eY-Cny"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="PaV-fY-eWb"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUu-8M-gEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,13 +93,17 @@
         <!--Navigation Controller-->
         <scene sceneID="b1h-qL-4xg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5D-GU-QHc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="D5D-GU-QHc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="btU-RM-aoI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gRj-Sh-fa6">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BX5-b7-C0E" kind="relationship" relationship="rootViewController" id="vQu-zz-d0C"/>
                     </connections>
