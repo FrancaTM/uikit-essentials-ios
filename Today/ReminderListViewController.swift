@@ -8,7 +8,12 @@
 import UIKit
 
 class ReminderListViewController: UITableViewController {
+    @IBOutlet var filterSegmentedControl: UISegmentedControl!
+    
     private var reminderListDataSource: ReminderListDataSource?
+    private var filter: ReminderListDataSource.Filter {
+        return ReminderListDataSource.Filter(rawValue: filterSegmentedControl.selectedSegmentIndex) ?? .today
+    }
     
     static let showDetailSegueIdentifier = "ShowReminderDetailSegue"
     static let mainStoryboardName = "Main"
@@ -48,6 +53,12 @@ class ReminderListViewController: UITableViewController {
     @IBAction func addButtonTriggered(_ sender: UIBarButtonItem) {
         addReminder()
     }
+    
+    @IBAction func segmentControlChanged(_ sender: UISegmentedControl) {
+        reminderListDataSource?.filter = filter
+        tableView.reloadData()
+    }
+    
     
     private func addReminder() {
         let storyboard = UIStoryboard(name: Self.mainStoryboardName, bundle: nil)
