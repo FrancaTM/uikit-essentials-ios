@@ -46,6 +46,14 @@ class ReminderDetailViewController: UITableViewController {
     }
     
     fileprivate func transitionToViewMode(_ reminder: Reminder) {
+        if isNew {
+            let addReminder = tempReminder ?? reminder
+            dismiss(animated: true) {
+                self.reminderAddAction?(addReminder)
+            }
+            return
+        }
+        
         if let tempReminder = tempReminder {
             self.reminder = tempReminder
             self.tempReminder = nil
@@ -77,13 +85,6 @@ class ReminderDetailViewController: UITableViewController {
         if editing {
             transitionToEditMode(reminder)
         } else {
-            if isNew {
-                let addReminder = tempReminder ?? reminder
-                dismiss(animated: true) {
-                    self.reminderAddAction?(addReminder)
-                }
-                return
-            }
             transitionToViewMode(reminder)
         }
         

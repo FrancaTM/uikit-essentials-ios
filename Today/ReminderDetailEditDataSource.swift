@@ -28,7 +28,7 @@ class ReminderDetailEditDataSource: NSObject {
         
         var numRows: Int {
             switch self {
-            case.title, .notes: return 1
+            case .title, .notes: return 1
             case .dueDate: return 2
             }
         }

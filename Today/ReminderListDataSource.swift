@@ -60,11 +60,13 @@ extension ReminderListDataSource: UITableViewDataSource {
             fatalError("Unable to dequeue ReminderCell")
         }
         
-        let reminder = Reminder.testData[indexPath.row]
-        let dateText = dateFormatter.localizedString(for: reminder.dueDate, relativeTo: Date())
+        let currentReminder = reminder(at: indexPath.row)
+        let dateText = dateFormatter.localizedString(for: currentReminder.dueDate, relativeTo: Date())
         
-        cell.configure(title: reminder.title, dateText: dateText, isDone: reminder.isComplete) {
-            Reminder.testData[indexPath.row].isComplete.toggle()
+        cell.configure(title: currentReminder.title, dateText: dateText, isDone: currentReminder.isComplete) {
+            var modifiedReminder = currentReminder
+            modifiedReminder.isComplete.toggle()
+            self.update(modifiedReminder, at: indexPath.row)
             tableView.reloadRows(at: [indexPath], with: .none)
         }
         
