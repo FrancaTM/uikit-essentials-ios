@@ -5,6 +5,8 @@
 //  Created by Tulio Marcos Franca on 23/01/22.
 //
 
+// TODO: fix "NSInternalInconsistencyException"
+
 import UIKit
 
 class ReminderListDataSource: NSObject {
